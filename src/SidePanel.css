@@ -1,0 +1,25 @@
+/* sidepanel.js/SidePanel.css */
+
+.side-panel {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .title {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .slider-container {
+    margin-bottom: 10px;
+  }
+  
+  .slider-label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  

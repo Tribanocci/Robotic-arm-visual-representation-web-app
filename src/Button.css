@@ -1,0 +1,19 @@
+/* sidepanel.js/Button.css */
+
+.custom-button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .button-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+  }
+  
