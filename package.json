@@ -15,5 +15,10 @@
     "scripts": {
         "start": "r3f-pack start",
         "build": "r3f-pack build"
+    },
+    "dependencies": {
+        "dat.gui": "^0.7.9",
+        "leva": "^0.9.35",
+        "react-dat-gui": "^4.1.1"
     }
 }
