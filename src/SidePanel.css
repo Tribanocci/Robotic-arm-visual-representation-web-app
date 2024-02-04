@@ -22,4 +22,30 @@
     margin-bottom: 5px;
   }
 
+  .controls-panel{
+    display: grid;
+    grid-template-columns: auto;
+    margin: 5px;
+  }
+
+  .control-buttons{
+    display: grid;
+    grid-template-columns: auto 20%;
+    margin: 5px;
+  }
+  .control-buttons.inactive {
+    opacity: 0.5; /* Adjust the opacity or add other styles for the inactive state */
+    pointer-events: none; /* Disable pointer events for inactive buttons */
+  }
   
+
+.base-control{
+  border: white solid 0.5px;
+  border-radius: 4px;
+  padding: 5px;
+  margin-bottom: 2rem;
+}
+.base-control.inactive {
+  opacity: 0.5; /* Adjust the opacity or add other styles for the inactive state */
+  pointer-events: none; /* Disable pointer events for inactive buttons */
+}

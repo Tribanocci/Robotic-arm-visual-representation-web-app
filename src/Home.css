@@ -1,0 +1,48 @@
+
+.home{
+    height: 100vh;
+    width: 100vw;
+}
+
+.side-panel{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(75, 74, 74, 0.822);
+    height: 100vh;
+    width: 20vw;
+}
+
+.main-panel{
+    position: relative;
+    height: 100vh;
+    background-image: url("../public/image_rob.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mask{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(131, 131, 131, 0.829);
+}
+.start-panel{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border: double white 5px;
+    padding: 1rem;
+    transform: translate(-50%, -50%);
+    min-width: 20%;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.start-panel button{
+    color:white;
+    background-color: rgba(54, 54, 54, 0.26);
+    padding: 5px;
+    font-size: 2rem;
+}
