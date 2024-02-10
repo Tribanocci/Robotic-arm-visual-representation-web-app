@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState } from 'react';
 
 
 import './Home.css';
@@ -34,19 +34,16 @@ export default function Home() {
       console.log(fileContents)
 
       try {
-        const result = await fetch("http://localhost:4000/data", {
-          method: "PUT", // Use PUT method to replace existing content
-          body: JSON.stringify(fileContents.data), 
-          headers:{
-            'Content-Type': 'application/json'
-          }
-        });
-        if (result.ok) {
-          console.log("File uploaded successfully.");
-          window.location.href = '/continueproject'
-        } else {
-          console.error("Failed t00o upload file.");
-        }
+        
+        fetch(`${process.env.KV_REST_API_URL}/set/userSession`, {
+          headers: {
+            Authorization: `Bearer ${process.env.KV_REST_API_TOKEN}`,
+          },
+          body: JSON.stringify(fileContents.data),
+          method: 'PUT',
+        })
+          .then((response) => response.json())
+          .then((data) => console.log(data));
       } catch (error) {
         console.error("Error uploading file:", error);
       }
