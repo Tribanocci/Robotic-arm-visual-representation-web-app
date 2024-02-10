@@ -39,7 +39,15 @@ export default function Home() {
           headers: {
             Authorization: `Bearer ${process.env.KV_REST_API_TOKEN}`,
           },
-          body: JSON.stringify(fileContents.data),
+          body: JSON.stringify({
+            sessid: '12345',
+            session_name: 'abcdef',
+            user: {
+              uid: 31,
+              name: 'test_user',
+              mail: 'user@example.com',
+            },
+          }),
           method: 'PUT',
         })
           .then((response) => response.json())
