@@ -1,1 +1,80 @@
-{"data":{"links":[{"positionStart":[0,0,0],"linkLength":0.15782775931466042,"rotationStart":[0,0,0],"type":"rev"},{"positionStart":[0,0.15782775931466042,0],"rotationStart":[0,1.5707963267948966,0],"linkLength":0.4295549502771594,"type":"tr"},{"positionStart":[0,0.5873827095918198,0],"rotationStart":[0,3.141592653589793,0],"linkLength":0.2,"type":"fix"}],"base":{"isActive":true,"type":"x"}}}
+{
+  "data": {
+    "links": [
+      {
+        "positionStart": [
+          0,
+          0,
+          0
+        ],
+        "linkLength": 0.2,
+        "rotationStart": [
+          0,
+          0,
+          0
+        ],
+        "type": "rev"
+      },
+      {
+        "positionStart": [
+          0,
+          0.3459465838271597,
+          0
+        ],
+        "rotationStart": [
+          0,
+          1.5707963267948966,
+          0
+        ],
+        "linkLength": 0.2,
+        "type": "tr"
+      },
+      {
+        "positionStart": [
+          0,
+          0.4619701599168203,
+          0
+        ],
+        "rotationStart": [
+          0,
+          3.141592653589793,
+          0
+        ],
+        "linkLength": 0.2,
+        "type": "tr"
+      },
+      {
+        "positionStart": [
+          0,
+          0.6407000108439806,
+          0
+        ],
+        "rotationStart": [
+          0,
+          4.71238898038469,
+          0
+        ],
+        "linkLength": 0.2,
+        "type": "fix"
+      },
+      {
+        "positionStart": [
+          0,
+          1.0284507778961403,
+          0
+        ],
+        "rotationStart": [
+          0,
+          9.42477796076938,
+          0
+        ],
+        "linkLength": 0.2,
+        "type": "rev"
+      }
+    ],
+    "base": {
+      "isActive": true,
+      "type": "x"
+    }
+  }
+}
