@@ -89,7 +89,7 @@ export default function Home() {
 }
 
 export const linksLoader = async () => {
-  const res = await fetch('http://localhost:4000/data')
+  const res = await fetch('https://able-treefrog-30552.upstash.io/set/user_1_session/session_token_value')
 
   return res.json()
 }
