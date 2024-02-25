@@ -3,7 +3,7 @@ import {  Route, createBrowserRouter, createRoutesFromElements, RouterProvider }
 
 
 //pages
-import Home, { linksLoader} from './Home'
+import Home, { linksLoader} from './Home_r'
 import NewProject from './NewProject_'
 
 
