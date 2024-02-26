@@ -49,6 +49,7 @@ export default function Home() {
           console.log(fileContents)
           window.location.href = '/continueproject'
         } else {
+          console.log(fileContents)
           console.error("Failed t00o upload file.");
         }
       } catch (error) {
