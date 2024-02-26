@@ -38,10 +38,10 @@ export default function Home() {
       try {
         const result = await fetch("https://able-treefrog-30552.upstash.io/set/user_1_session/session_token_value", {
           method: "PUT", // Use PUT method to replace existing content
-          body: JSON.stringify(fileContents.data), 
+          body: JSON.parse(fileContents.data), 
           headers:{
             Authorization: "Bearer AXdYASQgODgyMmQ1NmItZDg5Yi00N2IxLWExOTQtNGY5ZDJhMDBiNDNiZGM4ZDYyMThkN2FhNGIzNWE3YTM4NjhlNThiNzU3ZjU=",
-            'Content-Type': 'application/json'
+            
           }
         });
         if (result.ok) {
@@ -96,7 +96,7 @@ export const linksLoader = async () => {
       Authorization: "Bearer AXdYASQgODgyMmQ1NmItZDg5Yi00N2IxLWExOTQtNGY5ZDJhMDBiNDNiZGM4ZDYyMThkN2FhNGIzNWE3YTM4NjhlNThiNzU3ZjU=",
     }
   });
-
+  
   return res.json()
 }
 
