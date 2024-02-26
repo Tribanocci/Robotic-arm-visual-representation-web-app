@@ -89,7 +89,11 @@ export default function Home() {
 }
 
 export const linksLoader = async () => {
-  const res = await fetch('https://able-treefrog-30552.upstash.io/set/user_1_session/session_token_value')
+  const res = await fetch('https://able-treefrog-30552.upstash.io/set/user_1_session/session_token_value', {
+    headers:{
+      Authorization: "Bearer AXdYASQgODgyMmQ1NmItZDg5Yi00N2IxLWExOTQtNGY5ZDJhMDBiNDNiZGM4ZDYyMThkN2FhNGIzNWE3YTM4NjhlNThiNzU3ZjU=",
+    }
+  });
 
   return res.json()
 }
