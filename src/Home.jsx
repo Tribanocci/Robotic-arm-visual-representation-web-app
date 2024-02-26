@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState } from 'react';
 
 
 import './Home.css';
@@ -43,6 +43,7 @@ export default function Home() {
         });
         if (result.ok) {
           console.log("File uploaded successfully.");
+          console.log(fileContents.data)
           window.location.href = '/continueproject'
         } else {
           console.error("Failed t00o upload file.");
