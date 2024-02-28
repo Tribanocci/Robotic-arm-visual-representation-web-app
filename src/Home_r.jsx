@@ -47,7 +47,7 @@ export default function Home() {
         });
         if (result.ok) {
           console.log("File uploaded successfully.");
-          console.log(fileContents)
+          console.log(fileContents.data)
           window.location.href = '/continueproject'
         } else {
           console.log(fileContents)
