@@ -40,7 +40,7 @@ export default function Home() {
           method: "PUT", // Use PUT method to replace existing content
           headers:{
             Authorization: "Bearer AXdYASQgODgyMmQ1NmItZDg5Yi00N2IxLWExOTQtNGY5ZDJhMDBiNDNiZGM4ZDYyMThkN2FhNGIzNWE3YTM4NjhlNThiNzU3ZjU=",
-            
+            'Content-Type': 'application/json'
           },
           body: JSON.stringify(fileContents)
  
