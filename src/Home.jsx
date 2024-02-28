@@ -88,7 +88,9 @@ export default function Home() {
 
 export const linksLoader = async () => {
   const res = await fetch('http://localhost:4000/data')
-
+  if (res.ok){
+    console.log(res.body)
+  }
   return res.json()
 }
 

@@ -20,7 +20,7 @@ export default function NewProject() {
   const linksData = useLoaderData()
   if (linksData){
     console.log('GOT IT');
-    console.log(linksData.links);
+    console.log(linksData);
     initialLinkState = linksData.links;
     initialBaseState = linksData.base;
   }

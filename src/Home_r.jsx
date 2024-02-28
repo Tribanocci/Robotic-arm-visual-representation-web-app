@@ -53,7 +53,7 @@ export default function Home() {
           console.error("Failed t00o upload file.");
         }
       } catch (error) {
-        console.error("Error uploading file:", error);
+        console.error("Error uploading filezz:", error);
       }
     }
   };
@@ -96,7 +96,7 @@ export const linksLoader = async () => {
       Authorization: "Bearer AXdYASQgODgyMmQ1NmItZDg5Yi00N2IxLWExOTQtNGY5ZDJhMDBiNDNiZGM4ZDYyMThkN2FhNGIzNWE3YTM4NjhlNThiNzU3ZjU=",
     }
   });
-  
+  console.log(res.status)
   return res.json()
 }
 
