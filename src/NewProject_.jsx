@@ -21,8 +21,8 @@ export default function NewProject() {
   if (linksData){
     console.log('GOT IT');
     console.log(linksData);
-    initialLinkState = linksData.links;
-    initialBaseState = linksData.base;
+    initialLinkState = linksData.data.links;
+    initialBaseState = linksData.data.base;
   }
 
 

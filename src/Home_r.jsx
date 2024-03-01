@@ -4,6 +4,11 @@ import React, { useState } from 'react';
 import './Home.css';
 
 
+
+// Now you can use exampleData in your component
+
+
+
 function ReadFileAsync(file) {
   return new Promise( (resolve, reject) => {
     try {
@@ -59,6 +64,8 @@ export default function Home() {
     }
   };
 
+
+
   return (
     <div className='home'>
       <div className='side-panel'>
@@ -76,6 +83,11 @@ export default function Home() {
           </ul>
         </section>
       )}
+
+        <section>
+          <h5>Examples</h5>
+          <button onClick={() => window.location.href = '/exampleproject1'}>Example 1</button>
+        </section>
 
       </div>
       <div className='main-panel'>
@@ -103,3 +115,12 @@ export const linksLoader = async () => {
 
 
 
+
+export const loaderExample1 = async () => {
+
+ const res = await fetch('./example1.json')
+
+ 
+ console.log(res.status)
+ return res.json()
+}

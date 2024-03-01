@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import { kv } from '@vercel/kv'
-import { Redis } from 'ioredis';
+
+
 
 
 import './Home.css';
 
+const redis = require('redis');
 
 function ReadFileAsync(file) {
   return new Promise( (resolve, reject) => {
@@ -114,8 +116,8 @@ export const linksLoader = async () => {
 }
 
 
-const redis = new Redis()
+
 export const exampleloader = async () => {
-  const res = await redis.get("ex:1")
+  const res = await redis.json.get('ex:1')
   return res.json()
 }

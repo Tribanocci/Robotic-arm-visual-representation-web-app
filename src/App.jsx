@@ -3,7 +3,7 @@ import {  Route, createBrowserRouter, createRoutesFromElements, RouterProvider }
 
 
 //pages
-import Home, { linksLoader, exampleloader} from './Home_kv'
+import Home, { linksLoader, loaderExample1 } from './Home_r'
 import NewProject from './NewProject_'
 
 
@@ -13,7 +13,7 @@ const router = createBrowserRouter(
       <Route path='/' element={<Home />} />
       <Route path='/newproject' element={<NewProject />}  />
       <Route path='/continueproject' element={<NewProject />} loader={linksLoader} />
-      <Route path='/exampleproject1' element={<NewProject />} loader={exampleloader} />
+      <Route path='/exampleproject1' element={<NewProject />} loader={loaderExample1} />
     </Route>
   )
 )
